@@ -14,10 +14,8 @@ $font: "verdana", "helvetica", "arial", sans-serif;
 body {
   margin: 0;
   padding: 0;
-  font-family: $font;
-  color: $grey;
-  background-color: $bg-light;
 }
+
 table {
   border-spacing: 0;
 }
@@ -28,15 +26,13 @@ td {
 
 img {
   border: 0;
-  // display: block;
-  // max-width: 100%;
-  // height: auto;
 }
 
 .wrapper {
   width: 100%;
   table-layout: fixed;
   background-color: $bg-light;
+  padding-bottom: 40px;
 }
 
 .webkit {
@@ -59,6 +55,9 @@ img {
   padding-top: 40px;
   text-align: center;
 }
+& .padding {
+  padding: 15px;
+}
 
 .three-columns {
   text-align: center;
@@ -72,10 +71,6 @@ img {
     max-width: 200px;
     display: inline-block;
     vertical-align: top;
-  }
-
-  & .padding {
-    padding: 15px;
   }
 
   & .content {
@@ -93,9 +88,11 @@ img {
     line-height: 40px;
     text-align: center;
     text-decoration: none;
-    width: 100%;
-    -webkit-text-size-adjust: none;
-    // mso-hide: all;
+  }
+
+  & .third-img,
+  .third-img-last {
+    max-width: 150px;
   }
 }
 
